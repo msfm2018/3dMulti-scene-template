@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>three-mesh-bvh - Character Movement</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">院长数字驾驶舱</div>
+        <nav class="menu-items">
+            <div class="nav-item active" data-index="0">医院总览</div>
+            <div class="nav-item" data-index="1">智慧物联</div>
+            <div class="nav-item" data-index="2">智慧服务</div>
+            <div class="nav-item" data-index="3">智慧管理</div>
+        </nav>
+        <div class="time-icon">📞</div> 
+    </header>
+    
+    <div id="main-content">
+        <div class="container"></div>
+    
+        <div class="panel-node active">
+            <div class="side-panel left-top">
+                <h2 class="glow-text">医院实时概况</h2>
+                <div class="divider"></div>
+                <p class="sub-text">正在监控全院运行数据...</p>
+                
+                <div class="tech-btn-wrapper" id="detail-view-btn">
+                    <div class="btn-mesh"></div>
+                    <div class="btn-content">
+                        <i class="ri-search-eye-line"></i>
+                        <span>查看详细报表</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="panel-node">
+            <h2>物联设备监控</h2>
+            <p>当前在线设备：1,280 台</p>          
+
+            <button class="tech-btn" id="device-monitor-btn">              
+                查看设备详情             
+            </button>
+
+        </div>
+
+        <div class="panel-node">
+            <h2>智慧服务分析</h2>
+            <p>患者满意度：98%</p>
+        </div>
+        <div class="panel-node">
+            <h2>行政管理看板</h2>
+            <p>能耗指标：正常</p>
+        </div>
+    </div>
+  
+    <script type="module" src="./main.js"></script>
+
+
+</body>
+</html>
